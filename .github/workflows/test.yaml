@@ -1,0 +1,10 @@
+name : Run tests
+on : [push]
+
+jobs:
+  test:
+    name: Run unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Launch test
+        run: pytest test/test_demo.py
