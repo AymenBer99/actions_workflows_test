@@ -10,6 +10,6 @@ jobs:
       - name: Install pip
         run: sudo apt-get -y install python3-pip
       - name: Install environment
-        run: pip install -i ${{github.workspace}}/requirements.txt
+        run: pip install ${{github.workspace}}/requirements.txt
       - name: Launch test
         run: pytest test/test_demo.py
