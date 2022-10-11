@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install pip
-        run: sudo apt-get -y install python3-pip & pip install --upgrade pip
+        run: sudo apt-get -y install python3-pip
       - name: Install environment
-        run: pip install -i requirements.txt
+        run: ls
       - name: Launch test
         run: pytest test/test_demo.py
