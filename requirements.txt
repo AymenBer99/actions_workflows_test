@@ -4,3 +4,4 @@ sentencepiece
 protobuf
 submitit
 spacy
+pytest
